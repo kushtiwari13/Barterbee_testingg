@@ -1,0 +1,237 @@
+{
+  "products": [
+    {
+      "id": 18,
+      "title": "BarterBee Hooded Sweatshirts",
+      "price": "Price not specified",
+      "url": "./images/products/sweatshirt.png",
+      "category": "Business Accessories",
+      "color": "Black, Bottle Green, Chocolate, Deep Navy, Kelly Green, Light Graphite, Light Pink , Navy, Orange, Purple, Red, Royal Blue, Sky Blue, White , 10+ more colors",
+      "size": "Standard",
+      "fabric": "80% Cotton, 20% Polyester (Dark Heather Grey, Heather Green, Heather Royal, Heather Navy, Heather Red: 60% Cotton, 40% Polyester)",
+      "weight": "280gsm"
+    },
+    {
+      "id": 13,
+      "title": "BarterBee Classic T-shirt",
+      "price": "Price not specified",
+      "url": "./images/products/t_shirt.png",
+      "category": "Business Accessories",
+      "color": "Beige, Black, Bottle Green, Brown, Charcoal, French Navy, Heather Grey, Hot Pink, Kelly Green, Maroon, Military Green, Navy, Orange, Purple, Red, Royal, Sapphire Blue, Sky, White, Yellow",
+      "size": "Standard",
+      "fabric": "100% Cotton",
+      "weight": "180gsm"
+    },
+    {
+      "id": 16,
+      "title": "BarterBee Allround Work Polo",
+      "price": "Price not specified",
+      "url": "./images/products/work_polo.png",
+      "category": "Business Accessories",
+      "color": "Black/Steel Grey, Chilli Red/Black, Navy/Steel Grey, Petrol/Black, Steel Grey/Black",
+      "size": "S, 2XL, L, M, XL",
+      "fabric": "65% Polyester, 35% Cotton (220gsm)"
+    },
+    {
+      "id": 1,
+      "title": "BarterBee Caps",
+      "price": "Price not specified",
+      "url": "./images/products/cap.png",
+      "category": "Business Accessories",
+      "color": "Neon Orange/ White/ Olive, Red/ White/ Black",
+      "size": "LXL, SM",
+      "fabric": "63% Polyester, 34% Cotton, 3% Elastane"
+    },
+    {
+      "id": 2,
+      "title": "BarterBee Business Cards",
+      "price": "Price not specified",
+      "url": "./images/products/Business_card.png",
+      "category": "Business Accessories",
+      "color": "Customizable",
+      "size": "Standard",
+      "fabric": "Paper"
+    },
+    {
+      "id": 3,
+      "title": "BarterBee Poster Printing",
+      "price": "Price not specified",
+      "url": "./images/products/poster_printing.png",
+      "category": "Business Accessories",
+      "color": "Customizable",
+      "size": "Various sizes available",
+      "fabric": "Paper"
+    },
+    {
+      "id": 4,
+      "title": "BarterBee Pull-up Banners",
+      "price": "Price not specified",
+      "url": "./images/products/pullup_banners.png",
+      "category": "Business Accessories",
+      "color": "Customizable",
+      "size": "Various sizes available",
+      "fabric": "Vinyl"
+    },
+    {
+      "id": 5,
+      "title": "BarterBee Wedding Cards",
+      "price": "Price not specified",
+      "url": "./images/products/wedding_cards.png",
+      "category": "Business Accessories",
+      "color": "Customizable",
+      "size": "Standard",
+      "fabric": "Paper"
+    },
+    {
+      "id": 6,
+      "title": "BarterBee Greetings Cards",
+      "price": "Price not specified",
+      "url": "./images/products/greeting_cards.png",
+      "category": "Business Accessories",
+      "color": "Customizable",
+      "size": "Standard",
+      "fabric": "Paper"
+    },
+    {
+      "id": 7,
+      "title": "BarterBee Mugs",
+      "price": "Price not specified",
+      "url": "./images/products/mugs.png",
+      "category": "Business Accessories",
+      "color": "Customizable",
+      "size": "Standard",
+      "fabric": "Ceramic"
+    },
+    {
+      "id": 8,
+      "title": "BarterBee Pen",
+      "price": "Price not specified",
+      "url": "./images/products/pen.png",
+      "category": "Business Accessories",
+      "color": "Customizable",
+      "size": "Standard",
+      "fabric": "Plastic"
+    },
+    {
+      "id": 9,
+      "title": "BarterBee Keychains",
+      "price": "Price not specified",
+      "url": "./images/products/keychain.png",
+      "category": "Business Accessories",
+      "color": "Customizable",
+      "size": "Standard",
+      "fabric": "Metal"
+    },
+    {
+      "id": 10,
+      "title": "BarterBee Refreshing Bottle",
+      "price": "Price not specified",
+      "url": "./images/products/bottle.png",
+      "category": "Business Accessories",
+      "color": "Customizable",
+      "size": "Standard",
+      "fabric": "Plastic"
+    },
+    {
+      "id": 11,
+      "title": "BarterBee Monkey Comforter",
+      "price": "Price not specified",
+      "url": "./images/products/monkey_comforter.png",
+      "category": "Business Accessories",
+      "color": "Customizable",
+      "size": "Standard",
+      "fabric": "Fabric not specified"
+    },
+    {
+      "id": 12,
+      "title": "BarterBee Dragon Soft Toy",
+      "price": "Price not specified",
+      "url": "./images/products/dragon_toy.png",
+      "category": "Business Accessories",
+      "color": "Customizable",
+      "size": "Standard",
+      "fabric": "Fabric not specified"
+    },
+    {
+      "id": 14,
+      "title": "BarterBee Hat",
+      "price": "Price not specified",
+      "url": "./images/products/hat.png",
+      "category": "Business Accessories",
+      "color": "Purple, Turquoise",
+      "size": "Standard",
+      "fabric": "Fabric not specified"
+    },
+    {
+      "id": 15,
+      "title": "BarterBee Microfleece Jacket",
+      "price": "Price not specified",
+      "url": "./images/products/jacket.png",
+      "category": "Business Accessories",
+      "color": "Black, Navy",
+      "size": "S, 2XL, 3XL, 4XL, L, M, XL, XS",
+      "fabric": "100% Polyester (280 GSM)"
+    },
+    {
+      "id": 17,
+      "title": "BarterBee Women's Classic Polo",
+      "price": "Price not specified",
+      "url": "./images/products/womens_polo.png",
+      "category": "Business Accessories",
+      "color": "Black, Graphite, Navy, White",
+      "size": "10, 12, 14, 16, 6, 8",
+      "fabric": "Fabric not specified",
+      "weight": "185gsm"
+    },
+    {
+      "id": 19, 
+      "title": "BarterBee Joggers",
+      "price": "Price not specified",
+      "url": "./images/products/shorts.png",
+      "category": "Fashion",
+      "color": "Black, White",
+      "size": "S, 2XL, L, M, XL",
+      "fabric": "100% Cotton"
+    },
+    {
+      "id": 20, 
+      "title": "BarterBee Shorts",
+      "price": "Price not specified",
+      "url": "./images/products/shorts.png",
+      "category": "Fashion",
+      "color": "Black, White",
+      "size": "S, 2XL, L, M, XL",
+      "fabric": "100% Cotton"
+    },
+    {
+      "id": 21, 
+      "title": "BarterBee SportsWear Jersey",
+      "price": "Price not specified",
+      "url": "./images/products/t_shirt.png",
+      "category": "Fashion",
+      "color": "Black, White",
+      "size": "S, 2XL, L, M, XL",
+      "fabric": "100% Cotton"
+    },
+    {
+      "id": 22, 
+      "title": "BarterBee Varsity Jackets",
+      "price": "Price not specified",
+      "url": "./images/products/jacket.png",
+      "category": "Fashion",
+      "color": "Black, White",
+      "size": "S, 2XL, L, M, XL",
+      "fabric": "100% Cotton"
+    },
+    {
+      "id": 23, 
+      "title": "BarterBee Round Neck Oversized T-Shirts",
+      "price": "Price not specified",
+      "url": "./images/products/t_shirt.png",
+      "category": "Fashion",
+      "color": "Black, White",
+      "size": "S, 2XL, L, M, XL",
+      "fabric": "100% Cotton"
+    }
+  ]
+}

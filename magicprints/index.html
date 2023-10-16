@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ====== Favicon ====== -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./images/favicon/site.webmanifest" />
+  <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- ====== Boxicons ====== -->
+  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+  <!-- ====== Swiper CSS ====== -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+
+  <!-- ====== Custom CSS ====== -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Barterbee - MagicPrint</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+
+  <!-- font awesome style -->
+  <link href="../css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/styles.css" rel="stylesheet" />
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+    /*end header section*/
+  </style>
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="https://www.barterbee.co.uk/">
+            <img src="../images/logo.png" alt="Logo" class="logo-img" />
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../about.html"> About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <!-- Added "dropdown" class to create dropdown menu -->
+                <a class="nav-link dropdown-toggle" href="../service.html" id="servicesDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                  <a class="dropdown-item" href="../service.html">Web Development</a>
+                  <a class="dropdown-item" href="../service.html">Digital Marketing</a>
+                  <a class="dropdown-item" href="../service.html">Startup Consulting</a>
+                  <a class="dropdown-item" href="../service.html">Blockchain Consulting</a>
+                  <a class="dropdown-item" href="./index.html">MagicPrint</a>
+                  <a class="dropdown-item" href="../BarterBee_Cyborg/index.html">BarterBee Cyborg</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.barterbee.blog/">Blog</a>
+              </li>
+            </ul>
+
+            <div class="quote_btn-container">
+              <a href="" class="quote_btn"> Get A Quote </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ====== Hero Area ====== -->
+    <div class="hero">
+      <div class="row container d-flex">
+        <div class="col">
+          <div>
+            <h2 class="text_effect">
+              Branding you through us <br />
+              <span>One stop for your business to grow.</span>
+            </h2>
+            <br />
+          </div>
+          <div class="middle_subtitle_div">
+            <!-- <span class=" subtitlenew">Your business merchandising buddy.</span> -->
+          </div>
+
+          <button class="btn">Explore Now!</button>
+        </div>
+        <img src="../magicprints/images/shopping-girl-removebg-preview.png" alt="" />
+      </div>
+    </div>
+
+    <!-- popup section -->
+
+    <div class="popup" id="quotePopup">
+      <div class="popup-content">
+        <span class="close-btn" id="closePopup">&times;</span>
+        <h2>Get A Quote</h2>
+        <form action="send_quote.php" method="post" id="quoteForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="workemail">Work Email:</label>
+          <input type="email" id="workemail" name="workemail" required />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="service">Service:</label>
+          <select id="service" name="service">
+            <option value="webdev">Web Development</option>
+            <option value="digitalmarketing">Digital Marketing</option>
+            <option value="startupconsulting">Startup Consulting</option>
+            <option value="blockchain">
+              Blockchain Technology Consulting
+            </option>
+          </select>
+
+          <label for="requirements">Requirements:</label>
+          <textarea id="requirements" name="requirements" rows="4"></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+        <div id="messageBox" class="message-box"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== Collection ====== -->
+  <section class="section collection">
+    <div class="title">
+      <span>PRODUCTS</span>
+      <h2>Top Category</h2>
+    </div>
+    <div class="filters d-flex">
+      <div data-filter="Business Accessories">Business Accessories</div>
+      <div data-filter="Fashion">Fashion</div>
+    </div>
+
+    <div class="products container">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper" id="products">
+          <!-- Product items will be displayed here dynamically using JavaScript -->
+        </div>
+      </div>
+      <div class="pagination">
+        <div class="custom-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== New Arrival ====== -->
+  <!-- <section class="section new-arrival">
+      <div class="title">
+        <span>NEW ARRIVAL</span>
+        <h2>Latest Collection</h2>
+      </div>
+
+      <div class="row container">
+        <div class="col col-1">
+          <img src="./images/poster-1.png" alt="" />
+          <h3>
+            2021 Trends <br />
+            Women’s Smart Skirt
+          </h3>
+        </div>
+        <div class="col col-2">
+          <img src="./images/poster-2.png" alt="" />
+          <h3>
+            2021 Trends <br />
+            Women’s Smart Skirt
+          </h3>
+        </div>
+        <div class="col col-3">
+          <img src="./images/poster-3.png" alt="" />
+          <h3>
+            2021 Trends <br />
+            Women’s Smart Shirt <br />
+            <span>Discover More:</span>
+          </h3>
+        </div>
+      </div>
+    </section> -->
+
+  <!-- ====== Categories ====== -->
+  <section class="section categories">
+    <div class="title">
+      <span>OUR PRODUCTS</span>
+      <h2>2023 Latest Collection</h2>
+    </div>
+
+    <div class="products container">
+      <!-- <div class="product">
+          products will come here through js
+        </div> -->
+    </div>
+
+    <div class="button d-flex">
+      <a class="btn loadmore">Load More</a>
+    </div>
+  </section>
+
+  <!-- ====== Statistics ====== -->
+  <section class="section statistics">
+    <div class="title">
+      <span>WHY CHOOSE BARTERBEE?</span>
+      <h2>Our Benefits</h2>
+    </div>
+
+    <div class="row container">
+      <div class="col">
+        <div class="icon">
+          <i class="bx bxs-check-square"></i>
+        </div>
+        <h3>Easy Order System</h3>
+        <p>Place your order with Ease. Just talk to us!</p>
+      </div>
+      <div class="col">
+        <div class="icon">
+          <i class="bx bxs-user"></i>
+        </div>
+        <h3>On Time Delivery</h3>
+        <p>Get your order delivered on time!</p>
+      </div>
+      <div class="col">
+        <div class="icon">
+          <i class="bx bxs-dollar-circle"></i>
+        </div>
+        <h3>Money Back Guarantee</h3>
+        <p>
+          Worried about print mistakes? Don't worry, we make sure it won't
+          happen. It’s on us if it happens.
+        </p>
+      </div>
+      <div class="col">
+        <div class="icon">
+          <i class="bx bxs-user"></i>
+        </div>
+        <h3>Extensive Customer Support</h3>
+        <p>We value our customers! Providing extensive customer support.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact-container" id="requirement_form">
+    <div class="title">
+      <span>CONTACT US</span>
+      <h2>Requirement Form</h2>
+    </div>
+
+    <div class="contact-content">
+      <form action="#">
+        <div class="contact-details"></div>
+
+        <div class="contact-details">
+          <div class="contact-input-box">
+            <div class="contact-label">Product</div>
+            <select id="product" name="Pro" onchange="updateColors()">
+              <option value="Select Product">Select Product</option>
+              <option value="BarterBee Caps">BarterBee Caps</option>
+              <option value="BarterBee Business Cards">
+                BarterBee Business Cards
+              </option>
+              <option value="BarterBee Poster Printing">
+                BarterBee Poster Printing
+              </option>
+              <option value="BarterBee Pull-up Banners">
+                BarterBee Pull-up Banners
+              </option>
+              <option value="BarterBee Wedding Cards">
+                BarterBee Wedding Cards
+              </option>
+              <option value="BarterBee Greeting Cards">
+                BarterBee Greeting Cards
+              </option>
+              <option value="BarterBee Mugs">BarterBee Mugs</option>
+              <option value="BarterBee Pen">BarterBee Pen</option>
+              <option value="BarterBee Keychains">BarterBee Keychains</option>
+              <option value="BarterBee Refreshing Bottle">
+                BarterBee Refreshing Bottle
+              </option>
+              <option value="BarterBee Monkey Comforter">
+                BarterBee Monkey Comforter
+              </option>
+              <option value="BarterBee Dragon Soft Toy">
+                BarterBee Dragon Soft Toy
+              </option>
+              <option value="BarterBee Shorts">BarterBee Shorts</option>
+              <option value="BarterBee Hat">BarterBee Hat</option>
+              <option value="BarterBee Microfleece Jacket">
+                BarterBee Microfleece Jacket
+              </option>
+              <option value="BarterBee Allround Work Polo">
+                BarterBee Allround Work Polo
+              </option>
+              <option value="BarterBee Women's Classic Polo">
+                BarterBee Women's Classic Polo
+              </option>
+              <option value="BarterBee Hooded Sweatshirts">
+                BarterBee Hooded Sweatshirts
+              </option>
+              <option value="BarterBee Classic T-Shirts">
+                BarterBee Classic T-Shirts
+              </option>
+              <option value="BarterBee Joggers">BarterBee Joggers</option>
+              <option value="BarterBee SportsWear Jersey">
+                BarterBee SportsWear Jersey
+              </option>
+              <option value="BarterBee Varsity Jackets">
+                BarterBee Varsity Jackets
+              </option>
+              <option value="BarterBee Round Neck Oversized T-Shirts">
+                BarterBee Round Neck Oversized T-Shirts
+              </option>
+              <!-- Add more product options here -->
+            </select>
+          </div>
+
+          <div class="contact-input-box">
+            <div class="contact-label">Finish Colour</div>
+            <select id="finish-color" name="finish-color"></select>
+          </div>
+
+          <div class="contact-input-box">
+            <span class="contact-label">Sizes</span>
+            <div class="input-group">
+              <input type="number" placeholder="Width" required />
+              <input type="number" placeholder="Height" required />
+              <select name="size-unit">
+                <option value="inch">Inch</option>
+                <option value="cm">Cm</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="contact-input-box">
+            <span class="contact-label">Printed Sides</span>
+            <select name="printed-sides">
+              <option value="single-sided">Single-sided</option>
+              <option value="double-sided">Double-sided</option>
+              <option value="option3">Option 3</option>
+              <option value="option4">Option 4</option>
+            </select>
+          </div>
+          <div class="contact-input-box">
+            <span class="contact-label">Customized Text</span>
+            <textarea placeholder="Enter customized text" rows="4"></textarea>
+          </div>
+          <div class="contact-input-box">
+            <span class="contact-label">Quantity</span>
+            <input type="number" placeholder="Enter quantity" required />
+          </div>
+          <div class="contact-input-box">
+            <span class="contact-label">Upload Artwork</span>
+            <input type="file" accept=".jpg, .jpeg, .png" required />
+          </div>
+          <div class="contact-input-box">
+            <span class="contact-label">Name</span>
+            <input type="text" placeholder="Enter your name" required />
+          </div>
+          <div class="contact-input-box">
+            <span class="contact-label">Email</span>
+            <input type="email" placeholder="Enter your email" required />
+          </div>
+          <div class="contact-input-box">
+            <span class="contact-label">Contact Number</span>
+            <input type="tel" placeholder="Enter your contact number" required />
+          </div>
+          <div class="contact-input-box">
+            <span class="contact-label">Message</span>
+            <textarea placeholder="Enter your message" rows="4" required></textarea>
+          </div>
+        </div>
+        <div class="contact-button">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <div class="section step-container">
+    <div class="title">
+      <span>PROCESS</span>
+      <h2>How We Work</h2>
+    </div>
+    <section class="step-wrapper">
+      <ul>
+        <li class="">
+          <a href="#">
+            <i class="fas fa-shopping-bag icon"></i>
+            <p>Choose Product</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-tshirt icon"></i>
+            <p>Choose Size & Color</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-cloud-upload-alt icon"></i>
+            <p>Upload Image</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="far fa-credit-card icon"></i>
+            <p>Checkout</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- <section class="slides-pdf">
+    <div class="carousel-wrapper">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="background-image: url('./images/cara1.jpg');">
+            <div class="carousel-caption">
+              <h1>OUR PRICE MATCH GUARANTEE TO YOU</h1>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url('./images/cara2.jpg');">
+            <div class="carousel-caption">
+              <p>AT BARTER BEE DIGITAL, WE ARE COMMITTED TO PROVIDING THE BEST VALUE FOR MONEY IN THE INDUSTRY. AS
+                PART OF OUR ONGOING EFFORTS TO DELIVER EXCEPTIONAL VALUE TO OUR CUSTOMERS, WE REGULARLY CHECK OUR
+                COMPETITORS’ PRICES TO ENSURE THAT WE OFFER THE MOST COMPETITIVE PRICES ON THE MARKET. BY CONSTANTLY
+                MONITORING THE MARKET AND MAKING PRICE ADJUSTMENTS WHERE NECESSARY, WE STRIVE TO MAINTAIN OUR
+                REPUTATION AS A RELIABLE AND AFFORDABLE PROVIDER OF HIGH-QUALITY MARKETING AND BUSINESS BRAND
+                DEVELOPMENT SERVICES.</p>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url('./images/cara2.jpg');">
+            <div class="carousel-caption">
+              <p>WE BELIEVE THAT EVERYONE DESERVES ACCESS TO EXCELLENT MARKETING AND BRAND AWARENESS WITHOUT HAVING TO
+                BREAK THE BANK, AND WE ARE DEDICATED TO MAKING THAT A REALITY FOR OUR CUSTOMERS. WE ARE CONFIDENT THAT
+                WE OFFER THE BEST VALUE FOR MONEY IN THE INDUSTRY. IN FACT, WE ARE SO SURE THAT IF YOU RECEIVE A
+                CHEAPER QUOTE FOR IDENTICAL MARKETING AND BRAND DEVELOPMENT STRATEGIES FROM A UK SUPPLIER, WE WILL DO
+                OUR VERY BEST TO BEAT THE COMPETITOR’S QUOTE.</p>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url('./images/cara2.jpg');">
+            <div class="carousel-caption">
+              <p>AT BARTER BEE DIGITAL, WE ARE COMMITTED TO PROVIDING OUR CUSTOMERS WITH THE MOST COMPETITIVE PRICES
+                POSSIBLE, WITHOUT COMPROMISING ON THE QUALITY OF OUR PRODUCTS OR SERVICES.</p>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url('./images/cara2.jpg');">
+            <div class="carousel-caption">
+              <p>SIMPLY PROVIDE US WITH A COPY OF THE COMPETITOR’S QUOTE, AND WE WILL WORK WITH YOU TO FIND A SOLUTION
+                THAT MEETS YOUR NEEDS AND BUDGET. OUR GOAL IS TO ENSURE THAT YOU ARE COMPLETELY SATISFIED WITH YOUR
+                PURCHASE AND THAT YOU FEEL CONFIDENT THAT YOU ARE GETTING THE BEST VALUE FOR YOUR MONEY.</p>
+            </div>
+          </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="image-container">
+    <div class="slide">
+      <img src="./images/cara1.jpg" />
+      <p class="image-caption first_slide">OUR PRICE <br> MATCH GUARANTEE <br> TO YOU</p>
+    </div>
+    <div class="slide">
+      <img src="./images/cara2.jpg" />
+      <p class="image-caption">
+        AT BARTER BEE DIGITAL, WE ARE COMMITTED TO PROVIDING THE BEST VALUE
+        FOR MONEY IN THE INDUSTRY. AS PART OF OUR ONGOING EFFORTS TO DELIVER
+        EXCEPTIONAL VALUE TO OUR CUSTOMERS, WE REGULARLY CHECK OUR
+        COMPETITORS’ PRICES TO ENSURE THAT WE OFFER THE MOST COMPETITIVE
+        PRICES ON THE MARKET. BY CONSTANTLY MONITORING THE MARKET AND MAKING
+        PRICE ADJUSTMENTS WHERE NECESSARY, WE STRIVE TO MAINTAIN OUR
+        REPUTATION AS A RELIABLE AND AFFORDABLE PROVIDER OF HIGH-QUALITY
+        MARKETING AND BUSINESS BRAND DEVELOPMENT SERVICES.
+      </p>
+    </div>
+    <div class="slide">
+      <img src="./images/cara2.jpg" />
+      <p class="image-caption">
+        WE BELIEVE THAT EVERYONE DESERVES ACCESS TO EXCELLENT MARKETING AND
+        BRAND AWARENESS WITHOUT HAVING TO BREAK THE BANK, AND WE ARE DEDICATED
+        TO MAKING THAT A REALITY FOR OUR CUSTOMERS. WE ARE CONFIDENT THAT WE
+        OFFER THE BEST VALUE FOR MONEY IN THE INDUSTRY. IN FACT, WE ARE SO
+        SURE THAT IF YOU RECEIVE A CHEAPER QUOTE FOR IDENTICAL MARKETING AND
+        BRAND DEVELOPMENT STRATEGIES FROM A UK SUPPLIER, WE WILL DO OUR VERY
+        BEST TO BEAT THE COMPETITOR’S QUOTE.
+      </p>
+    </div>
+    <div class="slide">
+      <img src="./images/cara2.jpg" />
+      <p class="image-caption">
+        AT BARTER BEE DIGITAL, WE ARE COMMITTED TO PROVIDING OUR CUSTOMERS
+        WITH THE MOST COMPETITIVE PRICES POSSIBLE, WITHOUT COMPROMISING ON THE
+        QUALITY OF OUR PRODUCTS OR SERVICES.
+      </p>
+    </div>
+    <div class="slide">
+      <img src="./images/cara2.jpg" />
+      <p class="image-caption">
+        SIMPLY PROVIDE US WITH A COPY OF THE COMPETITOR’S QUOTE, AND WE WILL
+        WORK WITH YOU TO FIND A SOLUTION THAT MEETS YOUR NEEDS AND BUDGET. OUR
+        GOAL IS TO ENSURE THAT YOU ARE COMPLETELY SATISFIED WITH YOUR PURCHASE
+        AND THAT YOU FEEL CONFIDENT THAT YOU ARE GETTING THE BEST VALUE FOR
+        YOUR MONEY.
+      </p>
+    </div>
+
+    <!-- Next and Previous icon to change images -->
+    <a class="previous" onclick="moveSlides(-1)">
+      <i class="fa fa-chevron-circle-left"></i>
+    </a>
+    <a class="next" onclick="moveSlides(1)">
+      <i class="fa fa-chevron-circle-right"></i>
+    </a>
+
+    <br>
+
+    <div style="text-align: center">
+      <span class="footerdot" onclick="activeSlide(1)"> </span>
+      <span class="footerdot" onclick="activeSlide(2)"> </span>
+      <span class="footerdot" onclick="activeSlide(3)"> </span>
+      <span class="footerdot" onclick="activeSlide(4)"> </span>
+      <span class="footerdot" onclick="activeSlide(5)"> </span>
+    </div>
+  </section>
+
+  <script>
+    let slideIndex = 1;
+    displaySlide(slideIndex);
+
+    function moveSlides(n) {
+      displaySlide((slideIndex += n));
+    }
+
+    function activeSlide(n) {
+      displaySlide((slideIndex = n));
+    }
+
+    /* Main function */
+    function displaySlide(n) {
+      let i;
+      let totalslides = document.getElementsByClassName("slide");
+      let totaldots = document.getElementsByClassName("footerdot");
+
+      if (n > totalslides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = totalslides.length;
+      }
+      for (i = 0; i < totalslides.length; i++) {
+        totalslides[i].style.display = "none";
+      }
+      for (i = 0; i < totaldots.length; i++) {
+        totaldots[i].className = totaldots[i].className.replace(
+          " active",
+          ""
+        );
+      }
+      totalslides[slideIndex - 1].style.display = "block";
+      totaldots[slideIndex - 1].className += " active";
+    }
+  </script>
+
+  <div class="user-form">
+    <div class="close-form" id="close-form"><i class="bx bx-x"></i></div>
+    <div class="container">
+      <div class="form-box">
+        <!-- Your contact form here -->
+
+        <div class="formbold-main-wrapper">
+          <div class="formbold-form-wrapper">
+            <h2>Requirement Form</h2>
+
+            <form action="contact_form.php" method="POST">
+              <div class="formbold-input-flex">
+                <div>
+                  <label for="firstname" class="formbold-form-label">
+                    Your Name
+                  </label>
+                  <input type="text" name="firstname" id="firstname" placeholder="Your name"
+                    class="formbold-form-input" />
+                </div>
+
+                <div>
+                  <label for="email" class="formbold-form-label">
+                    Email
+                  </label>
+                  <input type="email" name="email" id="email" placeholder="example@email.com"
+                    class="formbold-form-input" />
+                </div>
+              </div>
+
+              <div class="formbold-input-flex">
+                <div>
+                  <label for="phone" class="formbold-form-label">
+                    Phone Number
+                  </label>
+                  <input type="tel" name="phone" id="phone" placeholder="Phone number" class="formbold-form-input" />
+                </div>
+
+                <div>
+                  <label for="quantity" class="formbold-form-label">
+                    Quantity
+                  </label>
+                  <input type="number" name="quantity" id="quantity" class="formbold-form-input" />
+                </div>
+              </div>
+
+              <div class="formbold-mb-3">
+                <label for="file-upload" class="formbold-form-label">
+                  Upload Artwork (File upload)
+                </label>
+                <input type="file" name="file-upload" id="file-upload" class="formbold-form-file"
+                  accept=".pdf,.doc,.docx,.jpg,.png" />
+              </div>
+
+              <div class="formbold-mb-3">
+                <label for="service" class="formbold-form-label">
+                  Select Service
+                </label>
+                <select name="service" id="service" class="formbold-form-input">
+                  <option value="Magic Prints">Magic Prints</option>
+                  <option value="Web Development">Web Development</option>
+                  <option value="Digital Marketing">Digital Marketing</option>
+                  <option value="Startup Consulting">
+                    Startup Consulting
+                  </option>
+                  <option value="Blockchain Consulting">
+                    Blockchain Consulting
+                  </option>
+                  <option value="BB Kids">BB Kids</option>
+                </select>
+              </div>
+
+              <div class="formbold-mb-3">
+                <label for="message" class="formbold-form-label">
+                  Your Message
+                </label>
+                <textarea rows="6" name="message" id="message" class="formbold-form-input"></textarea>
+              </div>
+
+              <!-- <div class="formbold-form-file-flex">
+                  <label for="captcha" class="formbold-form-label"> I'm not a robot </label>
+                  <input type="checkbox" name="captcha" id="captcha" class="formbold-form-captcha" />
+                </div> -->
+
+              <button class="formbold-btn" type="submit">Send Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== Footer ====== -->
+  <footer class="footer">
+    <div class="row container">
+      <div class="col">
+        <div class="logo d-flex">
+          <img src="../images/logo.png" alt="logo" />
+        </div>
+        <p>
+          We specialize in driving results for businesses of all sizes. Our
+          team of creative professionals is dedicated to crafting compelling
+          campaigns that maximize brand exposure and generate measurable
+          impact.
+        </p>
+        <div class="icons d-flex">
+          <div class="icon d-flex">
+            <i class="bx bxl-facebook"></i>
+          </div>
+          <div class="icon d-flex"><i class="bx bxl-twitter"></i></div>
+          <div class="icon d-flex"><i class="bx bxl-instagram"></i></div>
+          <div class="icon d-flex"><i class="bx bxl-youtube"></i></div>
+        </div>
+        <p class="color">&copy; <span id="displayYear"></span> All Rights Reserved By
+          <a href="https://barterbee.co.uk/">Barter Bee Digital</a><br />
+        </p>
+      </div>
+      <div class="col">
+        <div>
+          <h4>BarterBee</h4>
+          <a href="../index.html">Home</a>
+          <a href="../about.html">About</a>
+          <a href="../service.html">Services</a>
+          <a href="../contact.html">Contact Us</a>
+          <a href="./index.html">MagicPrint</a>
+          <a href="../BarterBee_Cyborg/index.html">BarterBee Cyborg</a>
+        </div>
+        <!-- <div>
+            <h4>Category</h4>
+            <a href="">Men</a>
+            <a href="">Women</a>
+            <a href="">Kids</a>
+            <a href="">Best Seller</a>
+            <a href="">New Arrivals</a>
+          </div> -->
+        <div class="col">
+          <h4>Subscribe</h4>
+          <form method="post" id="subscription-form">
+            <input type="text" name="email" id="email" placeholder="Enter email" class="subs" />
+            <br />
+            <button type="button" class="subs-btn" onclick="submitForm()">
+              Subscribe
+            </button>
+            <div id="result" style="margin-top: 10px"></div>
+          </form>
+        </div>
+        <div class="col">
+          <h4>Contact Us</h4>
+          <div class="d-flex">
+            <div class="icon"><i class="bx bxs-map"></i></div>
+            <span>
+              5 Hartington Street Westgate Newcastle Upon Tyne NE4 6PY</span>
+          </div>
+          <div class="d-flex">
+            <div class="icon"><i class="bx bxs-envelope"></i></div>
+            <span>sales@barterbee.co.uk</span>
+          </div>
+          <div class="d-flex">
+            <div class="icon"><i class="bx bxs-phone"></i></div>
+            <span><a href="tel:+447437035763">Call +44 7437035763</a> </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====== Login and Signup Form ====== -->
+
+  <!-- popup js -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const quoteButton = document.querySelector(".quote_btn");
+      const popup = document.getElementById("quotePopup");
+      const closePopup = document.getElementById("closePopup");
+      const popupContent = document.querySelector(".popup-content");
+      const messageBox = document.createElement("div");
+      messageBox.className = "message-box";
+
+      quoteButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        popup.style.display = "flex";
+      });
+
+      closePopup.addEventListener("click", function () {
+        popup.style.display = "none";
+      });
+
+      popupContent.addEventListener("click", function (event) {
+        event.stopPropagation();
+      });
+
+      window.addEventListener("click", function (event) {
+        if (event.target === popup) {
+          popup.style.display = "none";
+          messageBox.innerHTML = "";
+        }
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          popup.style.display = "none";
+          messageBox.innerHTML = "";
+        }
+      });
+
+      const form = document.querySelector("form");
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+
+        fetch("send_quote.php", {
+          method: "POST",
+          body: formData,
+        })
+          .then((response) => response.text())
+          .then((data) => {
+            if (data === "sent") {
+              messageBox.textContent = "Message sent!";
+            } else {
+              messageBox.textContent = "Message not sent. Please try again.";
+            }
+            form.appendChild(messageBox);
+          });
+      });
+    });
+  </script>
+
+  <script>
+    function submitForm() {
+      // Get the email input value
+      var email = document.getElementById("email").value;
+
+      // Validate the email (you can add more robust validation)
+      if (!validateEmail(email)) {
+        document.getElementById("result").innerHTML = "Invalid email format";
+        return;
+      }
+
+      // Create a new XMLHttpRequest object
+      var xhr = new XMLHttpRequest();
+
+      // Define the POST request to subscribe_form.php
+      xhr.open("POST", "subscribe_form.php", true);
+
+      // Set the callback function when the request is complete
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          if (xhr.responseText === "success") {
+            document.getElementById("result").innerHTML =
+              "Email sent successfully!";
+          } else {
+            document.getElementById("result").innerHTML =
+              "Error sending the email.";
+          }
+        }
+      };
+
+      // Set the request headers
+      xhr.setRequestHeader(
+        "Content-type",
+        "application/x-www-form-urlencoded"
+      );
+
+      // Send the POST request with the email data
+      xhr.send("email=" + email);
+    }
+
+    function validateEmail(email) {
+      // Basic email validation
+      var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return regex.test(email);
+    }
+  </script>
+
+  <!-- ====== SwiperJs ====== -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+  <!-- jQery -->
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <!-- bootstrap js -->
+  <script src="../js/bootstrap.js"></script>
+  <script src="../js/custom.js"></script>
+
+  <!-- =====CARASOUL===== -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <!-- ====== Custom Script ====== -->
+  <script src="./js/product.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/color.js"></script>
+</body>
+
+</html>

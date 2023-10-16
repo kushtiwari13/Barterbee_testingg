@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BBKids</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="" type="image/svg+xml" />
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+  <link rel="preload" as="image" href="./assets/images/kidsrobot.png" media="min-width(768px)" />
+  <link rel="preload" as="image" href="./assets/images/hero-abs-2.png" media="min-width(768px)" />
+</head>
+
+<body id="top">
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+      <h1>
+        <a href="../index.html" class="logo">
+          <img src="./assets/images/logo.png" alt="" />
+        </a>
+      </h1>
+
+      
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+            <a href="../index.html" class="logo">
+                <img src="./assets/images/logo.png" alt="" />
+            </a>
+    
+            <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+        </div>
+    
+        <ul class="navbar-list">
+            <li class="navbar-item">
+                <a href="../index.html" class="navbar-link active_link" data-nav-toggler>Home</a>
+            </li>
+    
+            <li class="navbar-item">
+                <a href="../about.html" class="navbar-link" data-nav-toggler>About</a>
+            </li>
+    
+            <li class="navbar-item dropdown"> <!-- Added "dropdown" class to the services item -->
+                <a href="#" class="navbar-link" data-nav-toggler>Services</a>
+                <ul class="dropdown-menu"> <!-- Dropdown menu -->
+                    <li class="dropdown-item">
+                        <a href="../magicprints/index.html" class="navbar-link" data-nav-toggler>Magic Prints</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="../service.html" class="navbar-link" data-nav-toggler>Web Development</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="../service.html" class="navbar-link" data-nav-toggler>Digital Marketing</a>
+                    </li>
+                    <li class="dropdown-item">
+                      <a href="../service.html" class="navbar-link" data-nav-toggler>Startup Consulting</a>
+                  </li>
+                  <li class="dropdown-item">
+                      <a href="../service.html" class="navbar-link" data-nav-toggler>Blockchain Consulting</a>
+                  </li>
+                  <li class="dropdown-item">
+                      <a href="index.html" class="navbar-link" data-nav-toggler>BarterBee Cyborg</a>
+                  </li>
+                </ul>
+            </li>
+    
+            <li class="navbar-item">
+                <a href="#event" class="navbar-link" data-nav-toggler>Course</a>
+            </li>
+    
+            <li class="navbar-item">
+                <a href="#" class="navbar-link" data-nav-toggler>BarterBee</a>
+            </li>
+    
+            <li class="navbar-item">
+                <a href="#" class="navbar-link" data-nav-toggler>Contact</a>
+            </li>
+        </ul>
+    </nav>
+    
+
+      <div class="header-actions">
+        <!-- <button class="header-action-btn" aria-label="Open search" data-search-toggler>
+          <ion-icon name="search-outline"></ion-icon>
+        </button> -->
+
+        <a href="#" class="header-action-btn login-btn">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">Get Quote</span>
+        </a>
+
+        <button class="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
+
+  <!-- 
+    - #SEARCH BOX
+  -->
+
+  <div class="search-container" data-search-box>
+    <div class="container">
+      <button class="search-close-btn" aria-label="Close search" data-search-toggler>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="search-wrapper">
+        <input type="search" name="search" placeholder="Search Here..." aria-label="Search" class="search-field" />
+
+        <button class="search-submit" aria-label="Submit" data-search-toggler>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <article>
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home" aria-label="hero">
+        <div class="container">
+          <div class="hero-content">
+            <!-- <p class="section-subtitle">Better Learning Future With Us</p> -->
+
+            <h2 class="h2 hero-title">
+              Welcome to BarterBee Digital and BarterBee Cyborg
+            </h2>
+
+            <p class="hero-text">
+              We're delighted to introduce you to our innovative and
+              cutting-edge technology solutions. At Barter Bee Digital, we're
+              passionate about bringing the latest in technology to
+              professionals, educators, and students. <br> Our mission</span>
+              is to enhance coding and robotics AI knowledge because we
+              believe that robotics will play a crucial role in various
+              industries in the near future. Our team is composed of dedicated
+              professionals, engineers, and educators with a strong background
+              in researching and developing emerging technologies.
+            </p>
+
+
+            <a href="#whatweoffer" class="btn btn-primary">
+              <span class="span">Get Started Today</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/kidsrobot.png" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100" />
+
+            <!-- <img src="./assets/images/-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+          </figure>
+        </div>
+      </section>
+
+      <!-- 
+        - #CATEGORY
+      -->
+
+      <section class="section category" id="whatweoffer" aria-label="category">
+        <div class="container">
+          <!-- <p class="section-subtitle">What We Offer</p> -->
+          <h2 class="h2 section-title">What We Offer</h2>
+
+          <ul class="grid-list">
+            <li>
+              <div class="category-card">
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="#">Live Instructors</a>
+                  </h3>
+                  <p>
+                    Our online platform enables students to interact with
+                    instructors as if they were in the same room, with video
+                    conferencing and screen-sharing capabilities for
+                    collaborative coding.
+                  </p>
+                  <!-- <span class="card-meta">39 Course</span> -->
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+                <!-- <div class="card-icon">
+                  <ion-icon name="file-tray-full-outline"></ion-icon>
+                </div> -->
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="#">Technical Support</a>
+                  </h3>
+                  <p>
+                    Our mentors have a strong coding background to assist
+                    students effectively.
+                  </p>
+                  <!-- <span class="card-meta">24 Course</span> -->
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+                <!-- <div class="card-icon">
+                  <ion-icon name="color-palette-outline"></ion-icon>
+                </div> -->
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="#">Trial Class</a>
+                  </h3>
+                  <p>
+                    Our mentors have a strong coding background to assist
+                    students effectively.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+                <!-- <div class="card-icon">
+                  <ion-icon name="layers-outline"></ion-icon>
+                </div> -->
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="#">Digital Certification</a>
+                  </h3>
+                  <p>
+                    Students receive digital certificates upon course
+                    completion.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+                <!-- <div class="card-icon">
+                  <ion-icon name="laptop-outline"></ion-icon>
+                </div> -->
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="#">Play Store Upload: </a>
+                  </h3>
+                  <p>
+                    The best apps developed by our students will be uploaded
+                    to the Play Store for the world to see.<!-- <span class="card-meta">39 Course</span> -->
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+                <!-- <div class="card-icon">
+                  <ion-icon name="thumbs-up-outline"></ion-icon>
+                </div> -->
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="#">24/7 Support</a>
+                  </h3>
+                  <p>
+                    Our experienced team is ready to assist you around the
+                    clock.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- <section class="section category" aria-label="category">
+          <div class="container">
+            <p class="section-subtitle">Course Categories</p>
+
+            <h2 class="h2 section-title">Popular Topics To Learn</h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="category-card">
+                  <div class="card-icon">
+                    <ion-icon name="briefcase-outline"></ion-icon>
+                    <ion-icon name="briefcase-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">
+                      <a href="#">Robotics</a>
+                    </h3>
+
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="category-card">
+                  <div class="card-icon">
+                    <ion-icon name="file-tray-full-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">
+                      <a href="#">Robotics</a>
+                    </h3>
+
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="category-card">
+                  <div class="card-icon">
+                    <ion-icon name="color-palette-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">
+                      <a href="#">Robotics</a>
+                    </h3>
+
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="category-card">
+                  <div class="card-icon">
+                    <ion-icon name="layers-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">
+                      <a href="#">Robotics</a>
+                    </h3>
+
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="category-card">
+                  <div class="card-icon">
+                    <ion-icon name="laptop-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">
+                      <a href="#">Web Development</a>
+                    </h3>
+
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="category-card">
+                  <div class="card-icon">
+                    <ion-icon name="thumbs-up-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">
+                      <a href="#">Robotics</a>
+                    </h3>
+
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="category-card">
+                  <div class="card-icon">
+                    <ion-icon name="headset-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">
+                      <a href="#">Digital Marketing</a>
+                    </h3>
+
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="category-card">
+                  <div class="card-icon">
+                    <ion-icon name="server-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">
+                      <a href="#">Data Sciences</a>
+                    </h3>
+
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section> -->
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner.jpg" width="450" height="590" loading="lazy" alt="about banner"
+              class="w-100 about-img" />
+
+            <img src="./assets/images/about-abs-1.jpg" width="188" height="242" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1" />
+
+            <img src="./assets/images/about-abs-2.jpg" width="150" height="200" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2" />
+          </figure>
+
+          <div class="about-content">
+            <p class="section-subtitle">What we provide</p>
+
+            <h2 class="h2 section-title">We Offer The Best Carrier</h2>
+
+            <ul class="about-list">
+              <li class="about-item">
+                <div class="item-icon item-icon-1">
+                  <img src="./assets/images/about-icon-1.png" width="30" height="30" loading="lazy"
+                    aria-hidden="true" />
+                </div>
+
+                <div>
+                  <h3 class="h3 item-title">Promote Edutainment</h3>
+
+                  <p class="item-text">
+                    We focus on making learning fun and engaging through
+                    gamification and concepts inspired by STEAM (Science,
+                    Technology, Engineering, Arts, and Mathematics).
+                  </p>
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="item-icon item-icon-2">
+                  <img src="./assets/images/about-icon-2.png" width="30" height="30" loading="lazy"
+                    aria-hidden="true" />
+                </div>
+
+                <div>
+                  <h3 class="h3 item-title">21st Century Skills</h3>
+
+                  <p class="item-text">
+                    Our goal is to equip children with the skills they need
+                    for the future, fostering self-discovery and exploration.
+                  </p>
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="item-icon item-icon-3">
+                  <img src="./assets/images/about-icon-3.png" width="30" height="30" loading="lazy"
+                    aria-hidden="true" />
+                </div>
+
+                <div>
+                  <h3 class="h3 item-title">Kids Coding</h3>
+
+                  <p class="item-text">
+                    We aim to create the ultimate platform for teaching kids
+                    to code, led by our expert teachers, recognizing that
+                    coding is the future of education.
+                  </p>
+                </div>
+              </li>.
+            </ul>
+
+            <a class="btn btn-primary" onclick="openForm()">
+              <span class="span">Know About Us</span>
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+            <div class="popup" id="popup">
+              
+              <form action="sendemail.php" method="post"> class="form-container">
+                <span class="close" onclick="closeForm()">&times;</span>
+                <h2>Book a Trial Class</h2>
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Enter Name" name="name" required>
+  
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+  
+                <label for="phone"><b>Phone Number</b></label>
+                <input type="text" placeholder="Enter Phone Number" name="phone" required>
+  
+                <label for="datetime"><b>Date and Time</b></label>
+                <input type="datetime-local" id="datetime" name="datetime" required>
+  
+                <label for="message"><b>Message</b></label>
+                <textarea placeholder="Enter your message" name="message" required></textarea>
+  
+  
+                <button type="submit" class="btn">Submit</button>
+              </form>
+            </div>
+
+
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+        - #COURSE
+      -->
+
+      <section class="section course" id="courses" aria-label="course"
+        style="background-image: url('./assets/images/course-bg.jpg')">
+        <div class="container">
+          <p class="section-subtitle">Popular Courses</p>
+
+          <h2 class="h2 section-title">Our Popular Courses</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/course-1.jpg" width="370" height="270" loading="lazy"
+                    alt="Competitive Strategy law for all students" class="img-cover" />
+                </figure>
+
+                <div class="card-actions">
+                  <span class="badge">Grade: 2nd - 5th</span>
+
+                  <!-- <button
+                      class="whishlist-btn"
+                      aria-label="Add to whishlist"
+                      data-whish-btn
+                    >
+                      <ion-icon name="heart"></ion-icon>
+                    </button> -->
+                </div>
+
+                <div class="card-content">
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <span class="card-meta-text">Barter Bee Kids</span>
+                    </li>
+
+                    <!-- <li class="card-meta-item">
+                        <ion-icon
+                          name="time-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <time datetime="PT18H15M44S" class="card-meta-text"
+                          >32 hours</time
+                        >
+                      </li> -->
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Game Development and Coding for Kids</a>
+                  </h3>
+                  <h5 class="">
+                    <a href="#" class="card-title">Cognitive benefits: Scratch-based coding, game design, animation
+                      development, and a course certificate.</a>
+                  </h5>
+
+                  <div class="rating-wrapper">
+                    <!-- <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div> -->
+
+                    <span class="card-meta-text">32 live interactive project-oriented sessions</span>
+                  </div>
+
+                  <div class="card-footer">
+                    <div class="card-price">
+                      <span class="span">£320</span>
+
+                      <del class="del">£390</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">32 Hours</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/course-1.jpg" width="370" height="270" loading="lazy"
+                    alt="App Development for Kids" class="img-cover" />
+                </figure>
+
+                <div class="card-actions">
+                  <span class="badge">Grade: 5th and above</span>
+                </div>
+
+                <div class="card-content">
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <span class="card-meta-text">Barter Bee Kids</span>
+                    </li>
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">App Development for Kids</a>
+                  </h3>
+                  <h5 class="">
+                    <a href="#" class="card-title">Course includes creating interactive Android apps, algorithm
+                      development, advanced app development structures, and a course completion certificate.</a>
+                  </h5>
+
+                  <div class="rating-wrapper">
+                    <span class="card-meta-text">32 live interactive project-oriented sessions</span>
+                  </div>
+
+                  <div class="card-footer">
+                    <div class="card-price">
+                      <span class="span">£320</span>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">32 Hours</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/course-1.jpg" width="370" height="270" loading="lazy"
+                    alt="Web Development for Kids" class="img-cover" />
+                </figure>
+
+                <div class="card-actions">
+                  <span class="badge">Grade: 5th and above</span>
+                </div>
+
+                <div class="card-content">
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <span class="card-meta-text">Barter Bee Kids</span>
+                    </li>
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Web Development for Kids</a>
+                  </h3>
+                  <h5 class="">
+                    <a href="#" class="card-title">Students learn to create and share content on their own web pages,
+                      using HTML and CSS, along with essential skills such as debugging and language structure.</a>
+                  </h5>
+                  <div class="rating-wrapper">
+                    <span class="card-meta-text">48 live interactive project-oriented sessions</span>
+                  </div>
+
+                  <div class="card-footer">
+                    <div class="card-price">
+                      <span class="span">£420</span>
+                    </div>
+                    <div class="card-meta-item">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                      <span class="card-meta-text">16 Hours</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+
+            <li>
+              <div class="course-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/course-1.jpg" width="370" height="270" loading="lazy"
+                    alt="Artificial Intelligence for Kids" class="img-cover" />
+                </figure>
+
+                <div class="card-actions">
+                  <span class="badge">Grade: 4th - 8th</span>
+                </div>
+
+                <div class="card-content">
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <span class="card-meta-text">Barter Bee Kids</span>
+                    </li>
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Artificial Intelligence for Kids</a>
+                  </h3>
+                  <h5 class="">
+                    <a href="#" class="card-title">Unlock the world of AI! This course introduces kids to the exciting
+                      world of Artificial Intelligence, teaching them how to build simple AI models, understand machine
+                      learning, and create AI-powered projects. Certificate provided upon completion.</a>
+                  </h5>
+
+                  <div class="rating-wrapper">
+                    <span class="card-meta-text">40 live interactive sessions</span>
+                  </div>
+
+                  <div class="card-footer">
+                    <div class="card-price">
+                      <span class="span">£320</span>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">20 Hours</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/course-2.jpg" width="370" height="270" loading="lazy"
+                    alt="Python Boot Camp: Go From Zero!" class="img-cover" />
+                </figure>
+
+                <div class="card-actions">
+                  <span class="badge">Age: 12+</span>
+                </div>
+
+                <div class="card-content">
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <span class="card-meta-text">Barter Bee Kids</span>
+                    </li>
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Python Boot Camp: Go From Zero!</a>
+                  </h3>
+                  <h5 class="">
+                    <a href="#" class="card-title">A comprehensive Python programming course for ages 12 and above.
+                      Covering Python fundamentals, this course includes certification, hands-on exercises, quizzes, and
+                      32 hours of assessment to ensure concept retention.</a>
+                  </h5>
+
+                  <div class="rating-wrapper">
+                    <span class="card-meta-text">32 live interactive project-oriented sessions</span>
+                  </div>
+
+                  <div class="card-footer">
+                    <div class="card-price">
+                      <span class="span">£420</span>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">Approx. 32 Hours</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/course-3.jpg" width="370" height="270" loading="lazy"
+                    alt="Python with Computer Vision" class="img-cover" />
+                </figure>
+
+                <div class="card-actions">
+                  <span class="badge">Age: 12+</span>
+                </div>
+
+                <div class="card-content">
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <span class="card-meta-text">Barter Bee Kids</span>
+                    </li>
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Python with Computer Vision</a>
+                  </h3>
+                  <h5 class="">
+                    <a href="#" class="card-title">Explore the world of Python and Computer Vision. This course provides
+                      a deep dive into Python algorithms, packages, and modules. Topics include image recognition,
+                      manipulation, face/object detection, and recognition algorithms. Ideal for ages 12 and above.</a>
+                  </h5>
+
+                  <div class="rating-wrapper">
+                    <span class="card-meta-text">48 live interactive project-oriented sessions</span>
+                  </div>
+
+                  <div class="card-footer">
+                    <div class="card-price">
+                      <span class="span">£320</span>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">Approx. 48 Hours</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/course-4.jpg" width="370" height="270" loading="lazy"
+                    alt="Python for Data Science and Machine Learning (Beginner) WSS" class="img-cover" />
+                </figure>
+
+                <div class="card-actions">
+                  <span class="badge">Age: 14+</span>
+                </div>
+
+                <div class="card-content">
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <span class="card-meta-text">Barter Bee Kids</span>
+                    </li>
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Python for Data Science and Machine Learning (Beginner) WSS</a>
+                  </h3>
+                  <h5 class="">
+                    <a href="#" class="card-title">Embark on a journey into data science and machine learning with
+                      Python. This course is tailored for beginners, focusing on real-world Python projects, data
+                      analysis, visualization, processing various file types, debugging, and mastering Python 3
+                      fundamentals. You'll also learn the basics of building machine learning models.</a>
+                  </h5>
+
+                  <div class="rating-wrapper">
+                    <span class="card-meta-text">48 live interactive project-oriented sessions</span>
+                  </div>
+
+                  <div class="card-footer">
+                    <div class="card-price">
+                      <span class="span">£520</span>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">Approx. 48 Hours</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/course-5.jpg" width="370" height="270" loading="lazy"
+                    alt="Mastering Artificial Intelligence using Deep Learning and Neural Networks" class="img-cover" />
+                </figure>
+
+                <div class="card-actions">
+                  <span class="badge">Advanced</span>
+                </div>
+
+                <div class="card-content">
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <span class="card-meta-text">Barter Bee Kids</span>
+                    </li>
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Mastering Artificial Intelligence using Deep Learning and Neural
+                      Networks</a>
+                  </h3>
+                  <h5 class="">
+                    <a href="#" class="card-title">Take your AI skills to the next level! This advanced course covers
+                      deep learning and neural networks. Learn to design and implement cutting-edge AI solutions. Dive
+                      into topics like natural language processing, computer vision, and reinforcement learning. You'll
+                      also work on practical projects and receive a certification upon completion.</a>
+                  </h5>
+
+                  <div class="rating-wrapper">
+                    <span class="card-meta-text">60 live interactive sessions with hands-on projects</span>
+                  </div>
+
+                  <div class="card-footer">
+                    <div class="card-price">
+                      <span class="span">£720</span>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">Approx. 60 Hours</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/course-6.jpg" width="370" height="270" loading="lazy"
+                    alt="Robotics Project-based Course" class="img-cover" />
+                </figure>
+
+                <div class="card-actions">
+                  <span class="badge">Age: 11+</span>
+                </div>
+
+                <div class="card-content">
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <span class="card-meta-text">Barter Bee Kids</span>
+                    </li>
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Robotics Project-based Course</a>
+                  </h3>
+                  <h5 class="">
+                    <a href="#" class="card-title">Embark on an exciting robotics journey! This project-based course is
+                      designed for ages 11 and above. With 48 live interactive project-oriented sessions and a 16-hour
+                      assessment to ensure concept retention, students will work on 15+ embedded and robotic projects.
+                      Each student receives a take-home kit, year-long support for individual project development, and
+                      active support for science exhibitions and robotics competitions.</a>
+                  </h5>
+
+                  <div class="rating-wrapper">
+                    <span class="card-meta-text">48 live interactive project-oriented sessions</span>
+                  </div>
+
+                  <div class="card-footer">
+                    <div class="card-price">
+                      <span class="span">£520</span>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">Approx. 16 Hours (assessment)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+
+
+          </ul>
+
+          <a href="#" class="btn btn-primary">
+            <span class="span">View All Courses</span>
+
+            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+          </a>
+        </div>
+      </section>
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="section cta" aria-label="workshop" style="background-image: url('./assets/images/cta-bg.png')">
+        <div class="container">
+          <figure class="cta-banner">
+            <img src="./assets/images/cta-banner.jpg" width="580" height="380" loading="lazy" alt="cta banner"
+              class="img-cover" />
+          </figure>
+
+          <div class="cta-content">
+            <!-- <p class="section-subtitle">Free Workshop</p> -->
+
+            <h2 class="h2 section-title">Why Coding Matters</h2>
+
+            <p class="section-text">
+              Coding isn't just about programming; it's a journey that
+              stimulates both logical and creative thinking, problem-solving,
+              and the development of essential skills. Coding boosts
+              confidence, contributes to academic success, and provides a
+              bright future for kids.
+            </p>
+
+            <!-- <a href="#" class="btn btn-secondary">
+              <span class="span">Upcomming Workshop</span>
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a> -->
+          </div>
+        </div>
+      </section>
+
+
+      <!-- 
+        - #system requirement
+      -->
+
+      <section class="section requirements" aria-label="requirements">
+        <div class="container">
+          <div class="requirements-content">
+            <h2 class="h2 section-title">Student Requirements</h2>
+            <ul class="requirements-list">
+              <li class="requirement-item">
+                <ion-icon name="desktop-outline" class="requirement-icon"></ion-icon>
+                <span class="requirement-text">Desktop, Laptop, Mac, Surface</span>
+              </li>
+              <li class="requirement-item">
+                <ion-icon name="camera-outline" class="requirement-icon"></ion-icon>
+                <span class="requirement-text">HD External Camera or Integrated Camera</span>
+              </li>
+              <li class="requirement-item">
+                <ion-icon name="headset-outline" class="requirement-icon"></ion-icon>
+                <span class="requirement-text">Headset with microphone, stable output, and input</span>
+              </li>
+              <li class="requirement-item">
+                <ion-icon name="laptop-outline" class="requirement-icon"></ion-icon>
+                <span class="requirement-text">Operating system: Windows 7, 8, 10, 11 or Mac OS</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- 
+        - #course-outcome
+      -->
+
+
+      <section class="section course-outlook" aria-label="course-outlook">
+        <div class="container">
+          <h2 class="h2 section-title">Course Outlook</h2>
+          <div class="course-outlook-content">
+            <div class="course-outlook-item">
+              <div class="icon-container">
+                <ion-icon name="time-outline" class="outlook-icon"></ion-icon>
+              </div>
+              <div class="outlook-details">
+                <h3 class="outlook-title">Each Module Consists of One Hour</h3>
+                <p class="outlook-description">
+                  Each module in the course is designed to be one hour long, making it easy to fit into your schedule.
+                </p>
+              </div>
+            </div>
+
+            <div class="course-outlook-item">
+              <div class="icon-container">
+                <ion-icon name="people-outline" class="outlook-icon"></ion-icon>
+              </div>
+              <div class="outlook-details">
+                <h3 class="outlook-title">Max Batch Size: 5 Students per Batch</h3>
+                <p class="outlook-description">
+                  To ensure personalized attention, each batch is limited to a maximum of 5 students.
+                </p>
+              </div>
+            </div>
+
+            <div class="course-outlook-item">
+              <div class="icon-container">
+                <ion-icon name="videocam-outline" class="outlook-icon"></ion-icon>
+              </div>
+              <div class="outlook-details">
+                <h3 class="outlook-title">Live 1:1 Sessions Provided</h3>
+                <p class="outlook-description">
+                  You'll have the opportunity for one-on-one live sessions with your instructor for personalized
+                  guidance.
+                </p>
+              </div>
+            </div>
+
+            <div class="course-outlook-item">
+              <div class="icon-container">
+                <ion-icon name="book-outline" class="outlook-icon"></ion-icon>
+              </div>
+              <div class="outlook-details">
+                <h3 class="outlook-title">Teaching Material Provided</h3>
+                <p class="outlook-description">
+                  You'll receive teaching materials, including activity sheets, lecture slides, and lesson plans after
+                  completing two warm-up classes.
+                </p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- 
+        - #EVENT
+      -->
+
+      <!-- <section class="section event" id="event" aria-label="event">
+          <div class="container">
+            <p class="section-subtitle">Upcomming Batches</p>
+
+            <h2 class="h2 section-title">Let’s Join Our Community</h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="event-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/event-1.jpg"
+                      width="370"
+                      height="250"
+                      loading="lazy"
+                      alt="Innovation & Technological Entrepreneurship Team"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <time class="badge" datetime="2022-12-04">04 Dec 2022</time>
+
+                  <div class="card-content">
+                    
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >Innovation & Technological Entrepreneurship Team</a
+                      >
+                    </h3>
+
+                    
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="event-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/event-2.jpg"
+                      width="370"
+                      height="250"
+                      loading="lazy"
+                      alt="Virtual Spring Part-time Jobs Fair for Student"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <time class="badge" datetime="2022-10-30">30th Oct 2022</time>
+
+                  <div class="card-content">
+                    
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >Virtual Spring Part-time Jobs Fair for Student</a
+                      >
+                    </h3>
+
+                    
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="event-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/event-3.jpg"
+                      width="370"
+                      height="250"
+                      loading="lazy"
+                      alt="Explorations of Regional Chief Executive Network"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <time class="badge" datetime="2022-09-18">18th Sep 2022</time>
+
+                  <div class="card-content">
+                    
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >Explorations of Regional Chief Executive Network</a
+                      >
+                    </h3>
+
+                    
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section> -->
+
+      <!-- 
+        - #NEWSLETTER
+      -->
+
+      <!-- <section class="section newsletter" aria-label="newsletter"
+        style="background-image: url('./assets/images/newsletter-bg.jpg')">
+        <div class="container">
+
+          <p class="section-subtitle">Subscribe Newsletter</p>
+
+          <h2 class="h2 section-title">Get Every Latest News</h2>
+
+          <form action="" class="newsletter-form">
+
+            <div class="input-wrapper">
+              <input type="email" name="email_address" aria-label="email" placeholder="Enter your mail address" required
+                class="email-field">
+
+              <ion-icon name="mail-open-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              <span class="span">Subscribe</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+          </form>
+
+        </div>
+      </section> -->
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo" style="padding: 10px">
+            <img src="./assets/images/logo.png" alt="" />
+          </a>
+
+          <!-- <p class="section-text">
+            It is a long established fact that a reader will be distracted by the readable content of a page when
+            looking at its
+            layout. The point of using Lorem Ipsum.
+          </p> -->
+
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Explore</p>
+          </li>
+
+          <li>
+            <a href="../index.html" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="../about.html" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">About </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="../service.html" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Services</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Courses</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="../magicprints/index.html" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">MagicPrints</span>
+            </a>
+          </li>
+
+          <!-- <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Privacy Policy</span>
+            </a>
+          </li> -->
+        </ul>
+
+        <!-- <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Useful Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Contact Us</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Pricing Plan</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Instructor Profile</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">FAQ</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Popular Courses</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Terms & Conditions</span>
+            </a>
+          </li>
+
+        </ul> -->
+
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Contact Info</p>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+            <address class="footer-link">
+              5 Hartington Street Westgate Newcastle Upon Tyne NE4 6PY
+            </address>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+            <a href="tel:+447733388065" class="footer-link">Call +44 773 338 8065</a>
+          </li>
+
+
+          <li class="footer-item">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+            <a href="mailto:sales@barterbee.co.uk" class="footer-link">sales@barterbee.co.uk</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">Copyright 2023 <a href="https://mindsahead.in/">MindsAhead Digital</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script>
+    function openForm() {
+      document.getElementById("popup").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
